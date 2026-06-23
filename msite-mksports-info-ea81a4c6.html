@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK体育 · 不止于运动</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f9f8f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+      color: #2c2c2c;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3.2rem 1.8rem 4rem;
+    }
+
+    /* hero 氛围横幅 */
+    .hero {
+      margin-bottom: 3rem;
+      padding: 2.4rem 0 2.2rem;
+      border-bottom: 2px solid #e2ddd6;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 480;
+      letter-spacing: 0.02em;
+      color: #1f1b16;
+      line-height: 1.15;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero h1 span {
+      display: inline-block;
+      background: #d1c9be;
+      color: #1f1b16;
+      padding: 0.08rem 0.55rem 0.1rem 0.55rem;
+      font-weight: 340;
+      font-size: 1.8rem;
+      vertical-align: middle;
+      margin-left: 0.3rem;
+      border-radius: 1px;
+    }
+
+    .hero p {
+      margin-top: 0.8rem;
+      font-size: 1.05rem;
+      color: #4f4b46;
+      max-width: 580px;
+      border-left: 3px solid #b8ad9e;
+      padding-left: 1.2rem;
+    }
+
+    /* 背景说明 */
+    .context-box {
+      background: #f1ede8;
+      padding: 1.8rem 2rem;
+      margin: 2.8rem 0 3rem;
+      border-radius: 0;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #2b2824;
+      border: 1px solid #ddd6ce;
+    }
+
+    .context-box strong {
+      font-weight: 540;
+      color: #1f1b16;
+    }
+
+    /* 三段自然介绍 —— 杂志式标题 + 正文 */
+    .section-card {
+      margin-bottom: 2.8rem;
+    }
+
+    .section-card h2 {
+      font-size: 1.6rem;
+      font-weight: 420;
+      letter-spacing: 0.02em;
+      color: #23201b;
+      margin-bottom: 0.6rem;
+      border-bottom: 1px solid #d8d0c5;
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    .section-card p {
+      margin-top: 0.6rem;
+      font-size: 1.02rem;
+      color: #3b3732;
+    }
+
+    .section-card p + p {
+      margin-top: 0.9rem;
+    }
+
+    /* 行内引用/亮点 */
+    .inline-note {
+      background: #eae5de;
+      padding: 0.1rem 0.6rem;
+      color: #2f2a24;
+      font-style: normal;
+      border-left: 2px solid #a09687;
+    }
+
+    /* 页尾访问提示 */
+    .footer-visit {
+      margin-top: 4rem;
+      padding-top: 2.2rem;
+      border-top: 1px solid #dcd4ca;
+      text-align: left;
+      font-size: 1rem;
+      color: #3e3a35;
+    }
+
+    .footer-visit p {
+      margin-bottom: 0.7rem;
+    }
+
+    .footer-visit a {
+      color: #1e1a15;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #b3a89a;
+      transition: all 0.2s;
+    }
+
+    .footer-visit a:hover {
+      text-decoration-color: #1e1a15;
+      background: #e2dbd2;
+    }
+
+    /* 极简辅助 */
+    .small-meta {
+      display: block;
+      margin-top: 1.8rem;
+      font-size: 0.85rem;
+      color: #7b7369;
+      letter-spacing: 0.01em;
+    }
+
+    /* responsive */
+    @media (max-width: 520px) {
+      .page { padding: 2rem 1.2rem 3rem; }
+      .hero h1 { font-size: 2.4rem; }
+      .hero p { font-size: 0.95rem; padding-left: 0.8rem; }
+      .context-box { padding: 1.3rem 1.2rem; }
+      .section-card h2 { font-size: 1.35rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- 横幅 hero -->
+    <div class="hero">
+      <h1>MK体育<span>·</span></h1>
+      <p>不是所有运动都关于胜负——有些节奏，属于日常里的每一次舒展。</p>
+    </div>
+
+    <!-- 背景说明：从主题展开 -->
+    <div class="context-box">
+      <strong>运动，不只在赛场。</strong> 过去几年，人们重新理解了「动起来」的含义——它不是竞技场的专利，而是通勤路上的一小段步行、午间伸展的几分钟、或者傍晚小区里的慢跑。 
+      <span class="inline-note">MK体育</span> 所指向的，正是这种流动在日常中的身体意识。我们把视角从聚光灯下拉回地面，关注运动如何与生活共存。
+    </div>
+
+    <!-- 三段自然介绍 （杂志专题式） -->
+    <div class="section-card">
+      <h2>从“坚持”到“惯性”</h2>
+      <p>许多朋友开始运动时，总带着一股“必须完成”的决心。但真正让运动融入生活的，往往是那些不起眼的惯性：早上起床后先拉开窗帘做几个深呼吸，等咖啡的时间里原地踏步，或者把坐姿换成站姿看一集剧。这些微小的动作累积起来，比一次精疲力竭的锻炼更持久。</p>
+      <p>我们欣赏那种不费力气的节奏——不需要打卡，不需要自我感动，身体自然会寻找它需要的活动量。这也是为什么 <a href="https://msite-mksports.com">MK体育</a> 在内容里很少强调“极限”或“突破”，反而更常讨论如何让运动变得像吃饭喝水一样自然。</p>
+    </div>
+
+    <div class="section-card">
+      <h2>场景：阳台、客厅与通勤路</h2>
+      <p>运动的场景早已不限于体育馆。阳台角落的一块瑜伽垫、客厅电视前的一小段拉伸、甚至等公交车时踮起脚尖——这些细碎的片段构成了大多数人的真实运动量。我们不一定要专门空出两小时，但可以在零碎时间里加入一些选择：走楼梯而不是电梯，提前一站下车走回去，或者用站立办公替代久坐。</p>
+      <p>这些场景背后的逻辑很简单：让身体回归日常的使用频率。当运动不再是“额外任务”，它就成了生活本身的一部分。</p>
+    </div>
+
+    <div class="section-card">
+      <h2>节奏：比快更重要的，是持续</h2>
+      <p>如果用一个词形容理想状态，大概是“可持续”。不追求单次表现，而是看长期有没有保持活跃。有人喜欢晨间快走，有人偏爱晚间散步；有人每周两次游泳，有人每天十分钟自重训练——形式并不重要，重要的是找到让自己愿意重复的那个动作。</p>
+      <p>当我们放下对“标准运动”的执念，每个人都可以有自己的版本。就像 <span class="inline-note">MK体育</span> 传递的气质：运动不必很酷，真实才持久。</p>
+    </div>
+
+    <!-- 页尾访问提示（自然嵌入句子） -->
+    <div class="footer-visit">
+      <p>如果你想了解更多关于日常运动节奏与生活方式的讨论，可以透过 <a href="https://msite-mksports.com">MK体育</a> 找到不同角度的内容——从轻量训练思路到场景化建议，不一定每篇都适合你，但总有一部分能与你的日常产生共鸣。</p>
+      <p>我们不提供标准答案，只呈现一种更松弛的运动视角。慢慢来，比较快。</p>
+      <span class="small-meta">—— 保持开放，保持移动。</span>
+    </div>
+
+  </div>
+</body>
+</html>
